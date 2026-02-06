@@ -16,7 +16,8 @@
 *{box-sizing:border-box}
 html,body{margin:0;padding:0}
 body{
-  font-family:'Montserrat', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  /* Use Raleway for a more modern, hip feel */
+  font-family:'Raleway', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   color:var(--text);
   background:
     radial-gradient(1100px 600px at 15% 0%, rgba(88,91,46,.10), transparent 60%),
@@ -39,7 +40,23 @@ a{color:inherit;text-decoration:none}
   justify-content:space-between;
   padding:12px 0;
 }
-.brand-logo{height:44px;width:auto;display:block}
+.brand-logo{
+  /* Increase logo size for better visibility */
+  height:96px;
+  width:auto;
+  display:block;
+}
+
+/* Brand text next to the logo */
+.brand-text{
+  display:inline-block;
+  margin-left:12px;
+  /* Increase brand name size for better visibility */
+  font-size:1.8rem;
+  font-weight:800;
+  color:var(--text);
+  white-space:nowrap;
+}
 .nav{display:flex;gap:16px;align-items:center;font-weight:700;color:rgba(16,18,13,.78)}
 .nav a:hover{color:var(--text)}
 .call-cta{
@@ -51,7 +68,15 @@ a{color:inherit;text-decoration:none}
   box-shadow: 0 10px 22px rgba(88,91,46,.20);
 }
 
-.hero{padding:54px 0 24px}
+.hero{
+  /* Maintain padding but also set a background image and overlay for a bold hero section */
+  padding:54px 0 24px;
+  background-image: linear-gradient(rgba(16,18,13,0.45), rgba(16,18,13,0.45)), url('assets/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  border-radius: var(--radius);
+}
 .hero-grid{
   display:grid;
   grid-template-columns: 1.15fr .85fr;
@@ -108,6 +133,8 @@ a{color:inherit;text-decoration:none}
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   padding:18px;
+  /* Override inherited white text color from hero */
+  color: var(--text);
 }
 .hero-panel h3{margin:0 0 8px}
 .muted{color:var(--muted)}
@@ -241,9 +268,26 @@ a{color:inherit;text-decoration:none}
   padding-top:18px;
 }
 .footer-left{display:flex;align-items:center;gap:12px}
-.footer-left img{height:34px;width:auto}
+.footer-left img{
+  height:50px;
+  width:auto;
+}
 .footer-right{display:flex;align-items:center;gap:10px;color:rgba(16,18,13,.74);font-weight:700}
 .dot{opacity:.55}
+
+/* Gallery grid styles */
+.gallery-grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap:14px;
+}
+.gallery-grid img{
+  width:100%;
+  height:200px;
+  object-fit:cover;
+  border-radius: var(--radius);
+  box-shadow: 0 8px 20px rgba(16,18,13,.10);
+}
 
 @media (max-width: 980px){
   .nav{display:none}
@@ -254,6 +298,6 @@ a{color:inherit;text-decoration:none}
   .contact-cards{grid-template-columns:1fr}
 }
 @media (max-width: 560px){
-  .brand-logo{height:40px}
+  .brand-logo{height:72px}
   .cards{grid-template-columns:1fr}
 }
