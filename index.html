@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Bank On It Junk Removal | Call Now</title>
-  <meta name="description" content="Clean, modern junk removal for North Central WV. Call now (304) 276-7389 or email bankonitjunk@gmail.com for a free quote." />
+  <title>BankOnIt Junk Removal | Fairmont, Morgantown, Bridgeport & Clarksburg WV</title>
+  <meta name="description" content="BankOnIt Junk Removal offers fast, professional hauling in Fairmont, Morgantown, Bridgeport and Clarksburg, WV. Call (304) 276-7389 for upfront pricing and clean service." />
   <link rel="icon" type="image/png" href="assets/favicon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +18,9 @@
       <a class="brand" href="#top" aria-label="BankOnIt Junk Removal">
         <img class="brand-logo" src="assets/logo.webp" alt="BankOnIt Junk Removal logo" />
         <span class="brand-text">BankOnIt&nbsp;Junk&nbsp;Removal</span>
-      </aBankOnIt <nav class="nav">
+      </a>
+
+      <nav class="nav">
         <a href="#services">Services</a>
         <a href="#how">How it works</a>
         <a href="#areas">Service Area</a>
@@ -78,6 +80,14 @@ Photos attached.</pre>
             <a class="btn btn-primary full" href="sms:+13042767389">Text Us Now</a>
           </div>
         </aside>
+      </div>
+    </section>
+
+    <!-- SEO intro section to highlight cities -->
+    <section id="seo-intro" class="section">
+      <div class="container">
+        <h2>Junk Removal in Fairmont, Morgantown, Bridgeport & Clarksburg</h2>
+        <p class="muted">Your trusted, locally owned hauler serving North Central West Virginia. We handle everything from single-item pickups to full property cleanouts.</p>
       </div>
     </section>
 
@@ -195,13 +205,70 @@ Photos attached.</pre>
         </div>
       </div>
     </section>
+
+    <!-- Quote request form section -->
+    <section id="quote" class="section section-soft">
+      <div class="container quote-form">
+        <h2>Request a Quote</h2>
+        <p class="muted">Fill out this form and we'll get back to you with an estimate.</p>
+        <form action="mailto:bankonitjunk@gmail.com" method="POST" enctype="text/plain">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="Name" required />
+
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="Phone" required />
+
+          <label for="address">Address</label>
+          <input type="text" id="address" name="Address" required />
+
+          <label for="items">Items to Remove</label>
+          <textarea id="items" name="Items" rows="3"></textarea>
+
+          <label for="photos">Photos (optional)</label>
+          <input type="file" id="photos" name="Photos" accept="image/*" multiple />
+
+          <button class="btn btn-primary" type="submit">Send Request</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Frequently Asked Questions section -->
+    <section id="faq" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Frequently Asked Questions</h2>
+        </div>
+        <div class="faq">
+          <div class="faq-item">
+            <h3>What types of items do you haul?</h3>
+            <p>We handle everything from household junk and furniture to appliances, yard waste, construction debris and more. If it's non‑hazardous, we can usually take it.</p>
+          </div>
+          <div class="faq-item">
+            <h3>Do you offer same‑day service?</h3>
+            <p>We offer same‑day or next‑day service whenever availability allows. Give us a call and we'll do our best to accommodate your schedule.</p>
+          </div>
+          <div class="faq-item">
+            <h3>How is pricing determined?</h3>
+            <p>Our pricing is based on volume, weight and the difficulty of the job. We'll provide a transparent quote before any work begins.</p>
+          </div>
+          <div class="faq-item">
+            <h3>What happens to my junk?</h3>
+            <p>We recycle and donate whenever possible. The rest is disposed of responsibly according to local regulations.</p>
+          </div>
+          <div class="faq-item">
+            <h3>Are you licensed and insured?</h3>
+            <p>Yes – BankOnIt Junk Removal is fully licensed and insured so you can hire us with confidence.</p>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
       <div class="footer-left">
-        <img src="assets/logo.webp" alt="Bank On It Junk Removal" />
-        <div class="small muted">© <span id="year"></span> Bank On It Junk Removal</div>
+        <img src="assets/logo.webp" alt="BankOnIt Junk Removal" />
+        <div class="small muted">© <span id="year"></span> BankOnIt Junk Removal</div>
       </div>
       <div class="footer-right">
         <a href="tel:+13042767389">(304) 276-7389</a>
@@ -212,5 +279,8 @@ Photos attached.</pre>
   </footer>
 
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+
+  <!-- Sticky call bar for mobile -->
+  <div class="sticky-call"><a href="tel:+13042767389">Call Now (304) 276-7389</a></div>
 </body>
 </html>
