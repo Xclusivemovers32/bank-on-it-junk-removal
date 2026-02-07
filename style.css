@@ -364,11 +364,15 @@ a{color:inherit;text-decoration:none}
     align-items:flex-start;
     gap:8px;
   }
-  /* Show the navigation links and stack them vertically for better readability */
+  /* Lay out the navigation links horizontally on small screens.
+     Use wrap so items flow onto multiple lines if needed, which keeps
+     the header height compact compared to a full vertical stack. */
   .nav{
     display:flex;
-    flex-direction: column;
-    gap:6px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items:flex-start;
+    gap:12px;
     font-size:1rem;
   }
   /* Align the call button to the left and add spacing */
