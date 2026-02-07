@@ -358,7 +358,13 @@ a{color:inherit;text-decoration:none}
 }
 
 @media (max-width: 980px){
-  .nav{display:none}
+  /* Show the navigation links on smaller screens so users can access all pages (including Service Areas). */
+  .nav{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    font-size:0.95rem;
+  }
   .hero-grid{grid-template-columns:1fr}
   .cards{grid-template-columns: repeat(2,1fr)}
   .steps{grid-template-columns:1fr}
